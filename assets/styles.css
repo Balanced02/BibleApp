@@ -1,0 +1,70 @@
+body {
+  overflow: hidden;
+}
+button {
+  width: 90%;
+}
+
+#navbar {
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    color: black;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+ #navbar ul {
+    overflow-y: scroll;
+} 
+
+ #navbar li {
+    color: #4d4e53;
+      border-bottom: 1px solid #4d4e53;  
+     /* padding: 8px;  */
+      padding-left: 45px;  
+    list-style: none;
+    position: relative;
+    left: -50px;
+    width: 100%;
+} 
+
+#navbar a {
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.verse {
+    color: white;
+    width: 20px;
+    display: none;
+    background: gray;
+    border: 2px solid gray;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.read {
+    display: flex;
+}
+
+.main-doc {
+    margin: 5%;
+    padding: 20px;
+    border: 10px dashed gray;
+    overflow-y: auto;
+    width: 90%;
+    height: 90%;
+}

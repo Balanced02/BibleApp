@@ -1,0 +1,57 @@
+<head>
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Bible App</title>
+</head>
+
+<body>
+  <div class="row container-fluid">
+    <div class="col-xs-3 col-md-2">
+      <nav id="navbar">
+        <header>Bible Books</header>
+        <% Bible.map(b => { %>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" name=<%= b.id %>><%= b.name %></button>
+            <ul class="dropdown-menu">
+              <% b.chapters.map(chapNo => { %>
+                <li>
+                  <a href="#">
+                    <%= chapNo %>
+                  </a>
+                </li>
+                <% }) %>
+            </ul>
+          </div>
+          <% }) %>
+    </div>
+
+    <ul>
+      <!-- <% Bible.map(b => { %>
+        <span>
+      <a class="nav-link" href="#" rel="internal" name = <%= b.id %> >
+        <li><%= b.name %></li>
+      </a>
+      <div class="verses">
+        <% b.chapters.map(chap => { %>
+      <div class="verse">
+        <%= chap %>
+      </div>
+      <% }) %>
+            <% }) %> -->
+  </div>
+  </span>
+  </ul>
+  </nav>
+  </div>
+  <div class="col-xs-9 col-md-10 read">
+    <div class='main-doc'>
+
+    </div>
+
+  </div>
+  </div>
+  <script src="/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>

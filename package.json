@@ -1,0 +1,24 @@
+{
+  "name": "bibleapp",
+  "version": "0.0.1",
+  "description": "Bible App",
+  "main": "server.js",
+  "scripts": {
+    "test": "Test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Bible",
+    "node",
+    "JavaScript",
+    "server"
+  ],
+  "author": "Balanced02",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "request": "^2.81.0"
+  }
+}
